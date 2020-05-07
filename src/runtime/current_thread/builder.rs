@@ -62,6 +62,12 @@ impl Builder {
         self
     }
 
+    /// Set the `Builder` instance that will be used to construct the runtime.
+    pub fn builder(&mut self, builder: runtime::Builder) -> &mut Self {
+        self.inner = builder;
+        self
+    }
+
     /// Create the configured `Runtime`.
     pub fn build(&mut self) -> io::Result<Runtime> {
         let compat_bg = compat::Background::spawn(&self.clock)?;
