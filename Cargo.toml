@@ -52,7 +52,7 @@ sink = ["futures-util/sink"]
 futures-01 = { package = "futures", version = "0.1" }
 futures-03-core = { package = "futures-core", version = "0.3.1" }
 futures-util = { version = "0.3.1", default-features = false, features = ["compat"] }
-tokio-02 = { package = "tokio", git= "https://github.com/jmagnuson/tokio", branch = "feature/park-shim", features = ["rt-core", "io-driver", "time"] }
+tokio-02 = { package = "tokio", git = "https://github.com/elbe0046/tokio", branch = "park-shim", features = ["rt-core", "io-driver", "time"] }
 pin-project-lite = { version = "0.1", optional = true }
 
 # runtime-only
